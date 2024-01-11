@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    background-color: #202020;
+    font-family: 'Poppins', sans-serif;
+}
+
+.websiteIntro {
+    padding: 30px;
+    color: #fff;
+}
+
+.websiteIntro h1 {
+    color: dodgerblue;
+    margin-bottom: 10px;
+}
+
+.websiteIntro p {
+    text-align: justify;
+    color: aliceblue;
+}
+
+.totalExpense {
+    width: 38vw;
+    padding: 15px 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.totalExpense input {
+    width: 85%;
+    min-width: 100px;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.totalExpense input:focus {
+    border: 2px solid dodgerblue;
+}
+
+.totalExpense button {
+    width: 15%;
+    min-width: 50px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.totalExpense button:hover {
+    background-color: rgb(17, 113, 208);
+}
+
+.expensesField {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin: 60px auto;
+    color: white;
+}
+
+.expensesField .expensesInputField {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50vw;
+    padding: 20px;
+}
+
+.expensesField p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.expensesField .expensesInputField input:nth-child(1) {
+    height: 50px;
+    width: 73%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.expensesField .expensesInputField input:nth-child(2) {
+    width: 12%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.expensesField .expensesInputField input:nth-child(1):focus,
+.expensesField .expensesInputField input:nth-child(2):focus {
+    transform: scale(1.02);
+}
+
+.expensesField .expensesInputField button {
+    width: 10%;
+    min-width: 40px;
+    font-size: 1rem;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.expensesField .expensesInputField button:hover {
+    background-color: rgb(42, 110, 177);
+}
+
+.expensesList{
+    width: 70vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 60px;
+    margin: 0 auto 30px auto;
+}
+
+.expensesList .amountTracker {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.amountLeft h2,
+.totalAmount h2 {
+    color: white;
+}
+
+.amountLeft p,
+.totalAmount p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: #303030;
+    padding: 10px;
+    border: 2px solid #cccccc89;
+    border-radius: 4px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
+    color: white;
+}
+
+.amountTracker .clearBtn button {
+    width: 80px;
+    height: 40px;
+    font-size: 100%;
+    background-color: #cd1610;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.amountTracker .clearBtn button:hover {
+    background-color: #ed3630;
+    box-shadow: 0 1px 2px rgba(216, 216, 216, 0.397);
+}
+
+table {
+    width: 70%;
+}
+
+table thead tr th {
+    font-size: 1.2rem;
+    background-color: #101010;
+}
+
+table thead tr td {
+    background-color: #303030;
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.457);
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+th:nth-child(1){
+    width: 70%;
+}
+
+th:nth-child(2),
+th:nth-child(3){
+    width: 15%;
+}
+
+table tbody tr td button {
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #cd1610;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.897);
+    color: white;
+    font-size: 100%;
+}
+
+table tbody tr td button:hover {
+    background-color: #ed3630;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .expensesField {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .expensesField .expensesInputField {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expensesField .expensesInputField input {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    .expensesField .expensesInputField input:nth-child(2){
+        width: 73%;
+        height: 50px;
+    }
+
+    .expensesField .expensesInputField button {
+        width: 30%;
+        height: 40px;
+    }
+
+    .expensesList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expensesList .amountTracker {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
